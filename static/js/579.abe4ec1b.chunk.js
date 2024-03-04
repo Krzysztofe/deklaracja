@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkform_ip_app=self.webpackChunkform_ip_app||[]).push([[579],{1579:function(e,p,i){i.r(p);var n=i(3239),r=i(184);p.default=function(){return(0,r.jsx)("main",{style:{display:"grid",placeItems:"center",height:"100vh"},children:(0,r.jsx)(n.Z,{})})}}}]);
-//# sourceMappingURL=579.abe4ec1b.chunk.js.map
