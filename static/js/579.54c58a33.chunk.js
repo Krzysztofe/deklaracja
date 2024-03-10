@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkform_ip_app=self.webpackChunkform_ip_app||[]).push([[579],{1579:(e,p,s)=>{s.r(p),s.d(p,{default:()=>r});var a=s(3239),i=s(184);const r=()=>(0,i.jsx)("main",{style:{display:"grid",placeItems:"center",height:"100vh"},children:(0,i.jsx)(a.Z,{})})}}]);
-//# sourceMappingURL=579.54c58a33.chunk.js.map
