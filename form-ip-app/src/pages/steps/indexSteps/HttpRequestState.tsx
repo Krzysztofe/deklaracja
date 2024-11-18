@@ -43,7 +43,7 @@ const HttpRequestState = () => {
       <>
         <Box sx={BoxStylesBackground}></Box>
         <Box sx={BoxStylesContent}>
-          <Typography variant={"fs_12_rg"} component={"p"}>
+          <Typography variant={"fs_16_rg"} component={"p"}>
             Błąd. Ponów próbę
           </Typography>
         </Box>
