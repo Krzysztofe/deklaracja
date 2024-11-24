@@ -28,6 +28,10 @@ declare module "@mui/material/styles" {
       fontSize: string;
       [key: string]: any;
     };
+    fs_24_rg: {
+      fontSize: string;
+      [key: string]: any;
+    };
   }
 
   interface TypographyVariantsOptions {
@@ -57,6 +61,11 @@ declare module "@mui/material/styles" {
       fontSize: string;
       [key: string]: any;
     };
+
+    fs_24_rg: {
+      fontSize: string;
+      [key: string]: any;
+    };
   }
   interface PaletteOptions {
     themeWhite: string;
@@ -71,6 +80,7 @@ declare module "@mui/material/Typography" {
     fs_14_sb: true;
     fs_16_rg: true;
     fs_16_sb: true;
+    fs_24_rg: true;
   }
 }
 
@@ -156,6 +166,12 @@ export const theme = createTheme({
       "@media (min-width:500px)": {
         fontSize: "16px",
       },
+    },
+
+    fs_24_rg: {
+      fontSize: "24px",
+      fontWeight: 400,
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
   },
 
