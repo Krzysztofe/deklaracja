@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import useMultistepFormStore from "../../../zustandStores/useMultistepFormStore";
 import StepsMainContainer from "../StepsMainContainer";
-import StepsHeader from "../stepsHeader/StepsHeader";
+import StepsHeader from "../stepsHeader/stepsHeader/StepsHeader";
 import HttpRequestState from "./HttpRequestState";
 import Container from "@mui/material/Container";
 import { rwd } from "../../../utils/rwd";

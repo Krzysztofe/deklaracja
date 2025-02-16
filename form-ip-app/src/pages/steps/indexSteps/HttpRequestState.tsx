@@ -8,7 +8,7 @@ import { heightHeaderXS, heightHeaderMD } from "../data/dataCompnentsHeight";
 const BoxStylesBackground = {
   position: "absolute",
   height: rwd(
-    `calc(100vh - ${heightHeaderXS})`,
+    `calc(100vh - ${heightHeaderXS}) !importand`,
     `calc(100vh - ${heightHeaderMD})`
   ),
   width: "100%",

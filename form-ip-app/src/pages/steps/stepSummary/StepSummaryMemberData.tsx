@@ -5,6 +5,7 @@ import React from "react";
 import { v4 as UUID } from "uuid";
 import { ModelMember } from "../../../sharedModels/ModelMember";
 import StepBorderline from "./StepBorderline";
+import ListItem from "@mui/material/ListItem";
 
 const dataSummary = [
   "Imię",
@@ -58,7 +59,12 @@ const StepSummaryMemberData = () => {
     <>
       {dataSummary.map((text, idx) => {
         return (
-          <React.Fragment key={UUID()}>
+          <ListItem
+            key={UUID()}
+            sx={{
+           
+            }}
+          >
             {formikValues[idx] === "" ? null : (
               <Box
                 sx={{
@@ -74,7 +80,7 @@ const StepSummaryMemberData = () => {
               </Box>
             )}
             {idx === 4 || (idx === 9 && <StepBorderline />)}
-          </React.Fragment>
+          </ListItem>
         );
       })}
     </>

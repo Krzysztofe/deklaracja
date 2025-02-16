@@ -1,7 +1,7 @@
 import ImageListItem from "@mui/material/ImageListItem";
 import List from "@mui/material/List";
 import { Link } from "react-router-dom";
-import useWindowWidth from "../../../hooks/useWindowWidth";
+import useWindowWidth from "../../../hooks/useWindowWidth/useWindowWidth";
 import { dataBanksList } from "./dataStepConfirmation";
 import { rwd } from "../../../utils/rwd";
 

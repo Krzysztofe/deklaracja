@@ -1,5 +1,4 @@
-
-import useWindowWidth from "../hooks/useWindowWidth";
+import useWindowWidth from "../hooks/useWindowWidth/useWindowWidth";
 
 const ImgPekao = () => {
   const { windowWidth } = useWindowWidth();

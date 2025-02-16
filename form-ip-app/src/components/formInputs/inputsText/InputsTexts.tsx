@@ -1,9 +1,9 @@
 import FormGroup from "@mui/material/FormGroup";
 import TextField from "@mui/material/TextField";
 import { useFormikContext } from "formik";
-import HeadingPrimary from "../../HeadingPrimary";
+import HeadingPrimary from "../../hedaingPrimary/HeadingPrimary";
 import { rwd } from "../../../utils/rwd";
-import InputsErrors from "../InputsErrors";
+import InputsErrors from "../InputsErrors/InputsErrors";
 import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore";
 import { useEffect } from "react";
 import { ModelMember } from "../../../sharedModels/ModelMember";

@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { rwd } from "../../../utils/rwd";
-import useMultistepFormStore from "../../../zustandStores/useMultistepFormStore";
+import useMultistepFormStore from "../../../../zustandStores/useMultistepFormStore";
 
 type Props = {
   idx: number;

@@ -1,5 +1,5 @@
 import useMultistepFormStore from "../../zustandStores/useMultistepFormStore";
-import FormContextWrapper from "./FormContextWrapper";
+import FormContextWrapper from "./stepsInFormWrapper/FormContextWrapper";
 import StepsInForm from "./StepsInForm";
 import StepsInFormWrapper from "./StepsInFormWrapper";
 import StepFormClause from "./stepClause/StepFormClause";

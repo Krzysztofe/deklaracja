@@ -1,4 +1,4 @@
-import useWindowWidth from "../hooks/useWindowWidth";
+import useWindowWidth from "../hooks/useWindowWidth/useWindowWidth";
 
 const ImgMbank = () => {
   const { windowWidth } = useWindowWidth();

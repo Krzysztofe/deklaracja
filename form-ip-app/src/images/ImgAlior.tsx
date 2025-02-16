@@ -1,5 +1,4 @@
-
-import useWindowWidth from "../hooks/useWindowWidth";
+import useWindowWidth from "../hooks/useWindowWidth/useWindowWidth";
 
 const ImgAlior = () => {
   const { windowWidth } = useWindowWidth();
@@ -7,7 +6,8 @@ const ImgAlior = () => {
   return (
     <svg
       id="Alior"
-      xmlns="http://www.w3.org/2000/svg"      width={windowWidth < 400 ? "104" : "80"}
+      xmlns="http://www.w3.org/2000/svg"
+      width={windowWidth < 400 ? "104" : "80"}
       height="74"
       viewBox="0 0 104 74"
     >

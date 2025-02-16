@@ -1,8 +1,8 @@
 import React from "react";
 import { Form, Formik } from "formik";
-import useFormikMember from "./stepForm/useFormikMember/useFormikMember";
-import useFormikClause from "./stepClause/useFormikClause/useFormikClause";
-import useMultistepFormStore from "../../zustandStores/useMultistepFormStore";
+import useFormikMember from "../stepForm/useFormikMember/useFormikMember";
+import useFormikClause from "../stepClause/useFormikClause/useFormikClause";
+import useMultistepFormStore from "../../../zustandStores/useMultistepFormStore";
 
 type Props = {
   children: React.ReactNode;

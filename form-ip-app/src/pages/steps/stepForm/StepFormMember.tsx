@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import StepFormHeader from "./StepFormHeader";
-import InputsRadio from "../../../components/formInputs/InputsRadio";
+import InputsRadio from "../../../components/formInputs/inputsRadio/InputsRadio";
 import InputsRadioWithText from "../../../components/formInputs/inputsRadioWithText/InputsRadioWithText";
 import InputsTexts from "../../../components/formInputs/inputsText/InputsTexts";
 import { dataEmployerInputs } from "./dataFormMember";

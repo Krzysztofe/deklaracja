@@ -1,9 +1,8 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import HeadingPrimary from "../../../components/HeadingPrimary";
+import HeadingPrimary from "../../../components/hedaingPrimary/HeadingPrimary";
 import { dataClauseParagraphs } from "./dataStepClause";
 import { rwd } from "../../../utils/rwd";
-
 
 const StepClause = () => {
   return (

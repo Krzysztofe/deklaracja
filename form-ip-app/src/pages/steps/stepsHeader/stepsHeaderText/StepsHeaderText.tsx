@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography";
-import { rwd } from "../../../utils/rwd";
+import { rwd } from "../../../../utils/rwd";
 
 type Props = {
   text: string;

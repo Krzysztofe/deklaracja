@@ -4,10 +4,10 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import { useFormikContext } from "formik";
-import HeadingPrimary from "../HeadingPrimary";
-import { rwd } from "../../utils/rwd";
-import InputsErrors from "./InputsErrors";
-import { ModelMember } from "../../sharedModels/ModelMember";
+import HeadingPrimary from "../../hedaingPrimary/HeadingPrimary";
+import { rwd } from "../../../utils/rwd";
+import InputsErrors from "../InputsErrors/InputsErrors";
+import { ModelMember } from "../../../sharedModels/ModelMember";
 
 type Props = {
   headingText: string;

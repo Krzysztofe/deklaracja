@@ -1,14 +1,12 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import { rwd } from "../../../utils/rwd";
-import StepFormAlert from "./StepFormAlert";
-import StepsHeaderNumber from "./StepsHeaderNumber";
-import StepsHeaderText from "./StepsHeaderText";
-import StepHeaderArrow from "./StepHeaderArrow";
+import { rwd } from "../../../../utils/rwd";
+import StepFormAlert from "../StepFormAlert";
+import StepsHeaderNumber from "../stepsHeaderNumber/StepsHeaderNumber";
+import StepsHeaderText from "../stepsHeaderText/StepsHeaderText";
+import StepHeaderArrow from "../StepHeaderArrow";
 import { memo } from "react";
-import { heightHeaderXS, heightHeaderMD } from "../data/dataCompnentsHeight";
-
-
+import { heightHeaderXS, heightHeaderMD } from "../../data/dataCompnentsHeight";
 
 const StepsHeader = memo(() => {
   const dataSteps = ["Formularz", "Klauzula", "Wysyłka", "Potwierdzenie"];

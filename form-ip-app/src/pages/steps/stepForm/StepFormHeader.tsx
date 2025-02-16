@@ -1,20 +1,19 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import HeadingPrimary from "../../../components/HeadingPrimary";
+import HeadingPrimary from "../../../components/hedaingPrimary/HeadingPrimary";
 import { rwd } from "../../../utils/rwd";
 
 const StepFormHeader = () => {
   return (
     <Box py={3.9} borderBottom={1} borderColor={"info.light"}>
       <Typography variant="h1" color="info.dark" mb={4.2}>
-        Deklaracja Przystąpienia do<br />
+        Deklaracja Przystąpienia do
+        <br />
         OZZIP Amazon
       </Typography>
 
       <HeadingPrimary
-        headingText={
-          "Przekazane dane są wyłącznie do wiadomości OZZIP Amazon"
-        }
+        headingText={"Przekazane dane są wyłącznie do wiadomości OZZIP Amazon"}
       />
 
       <Typography
