@@ -12,7 +12,7 @@ describe("InputsRadio", () => {
       <Formik initialValues={initialValues} onSubmit={() => {}}>
         <InputsRadio
           headingText="Test Heading"
-          inputsData={["name", "surname"]}
+          inputsData={inputsData}
           inputValue={"user"}
           membership={true}
         />
@@ -64,7 +64,7 @@ describe("InputsRadio", () => {
   
       // Check if the selected value is correctly set
       //   if (radio === customInitialValues.user) {
-      //     expect(radioButton).toBeChecked(); // The radio matching the initial value should be checked
+      //     expect(radioButton).toBeChecked();
       //   } else {
       //     expect(radioButton).not.toBeChecked();
       //   }
