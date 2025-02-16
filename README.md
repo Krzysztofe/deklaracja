@@ -8,7 +8,7 @@ The application consists of four steps: <br/> 1 A form that collects basic infor
 
 The form data is transmitted via a backend application created in Express to the union office's email inbox.
 
-The application's styles are designed based on the UI graphic design created in Figma.
+The application has been tested with unit tests.
 
 
 ## Features
@@ -32,7 +32,7 @@ The application's styles are designed based on the UI graphic design created in 
 * React hooks: <br/> useState, useEffect, useRef <br/> useFormikContext, custom hooks
 * Libraries: <br/>
 react-router, react-router-dom, <br/>
-formik, yup, <br/>
+formik, yup, react testing library, jest<br/>
 
 
 
