@@ -4,12 +4,13 @@ import { Formik } from "formik";
 import { initialValues } from "../../../pages/steps/stepForm/useFormikMember/initialValuesMember";
 import InputsRadio from "./InputsRadio";
 
+const mockedSubmit = jest.fn();
 const inputsData = ["name", "surname"];
 
 describe("InputsRadio", () => {
   test("renders the headingText prop", () => {
     render(
-      <Formik initialValues={initialValues} onSubmit={() => {}}>
+      <Formik initialValues={initialValues} onSubmit={mockedSubmit}>
         <InputsRadio
           headingText="Test Heading"
           inputsData={inputsData}
@@ -24,7 +25,7 @@ describe("InputsRadio", () => {
 
   test("renders radio based on inputsData prop", () => {
     render(
-      <Formik initialValues={initialValues} onSubmit={() => {}}>
+      <Formik initialValues={initialValues} onSubmit={mockedSubmit}>
         <InputsRadio
           headingText="Test Heading"
           inputsData={inputsData}
@@ -49,7 +50,7 @@ describe("InputsRadio", () => {
     };
 
     render(
-      <Formik initialValues={initialValues} onSubmit={() => {}}>
+      <Formik initialValues={initialValues} onSubmit={mockedSubmit}>
         <InputsRadio
           headingText="Test Heading"
           inputsData={inputsData}

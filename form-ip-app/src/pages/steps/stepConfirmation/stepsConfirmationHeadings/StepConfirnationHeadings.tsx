@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
-import HeadingPrimary from "../../../components/hedaingPrimary/HeadingPrimary";
+import HeadingPrimary from "../../../../components/hedaingPrimary/HeadingPrimary";
+
 
 type Props = {
   texts: string[];
