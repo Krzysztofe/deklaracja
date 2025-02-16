@@ -4,8 +4,8 @@ import Box from "@mui/material/Box";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { useFormikContext } from "formik";
-import InputsErrors from "./InputsErrors/InputsErrors";
-import { rwd } from "../../utils/rwd";
+import InputsErrors from "../InputsErrors/InputsErrors";
+import { rwd } from "../../../utils/rwd";
 import React from "react";
 
 type Props = {

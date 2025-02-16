@@ -4,7 +4,7 @@ import InputsErrors from "./InputsErrors";
 import { FormikErrors, FormikTouched } from "formik";
 import { ModelMember } from "../../../sharedModels/ModelMember";
 
-// Mock data for Formik errors and touched
+
 const mockErrors: FormikErrors<ModelMember> = {
   name: "Name is required",
   email: "Email is invalid",

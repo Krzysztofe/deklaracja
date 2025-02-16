@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import InputsCheckbox from "../../../components/formInputs/InputsCheckbox";
+import InputsCheckbox from "../../../components/formInputs/inputsCheckbox/InputsCheckbox";
 import { rwd } from "../../../utils/rwd";
 
 const dataCheckbox = [
