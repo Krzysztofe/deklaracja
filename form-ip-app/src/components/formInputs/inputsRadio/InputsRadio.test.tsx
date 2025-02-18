@@ -1,8 +1,9 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Formik } from "formik";
 import { initialValues } from "../../../pages/steps/stepForm/useFormikMember/initialValuesMember";
 import InputsRadio from "./InputsRadio";
+import { act } from "react-dom/test-utils";
 
 const mockedSubmit = jest.fn();
 const inputsData = ["name", "surname"];
@@ -62,7 +63,7 @@ describe("InputsRadio", () => {
     inputsData.forEach(radio => {
       const radioButton = screen.getByRole("radio", { name: radio });
       expect(radioButton).toHaveAttribute("value", radio);
-  
+
       // Check if the selected value is correctly set
       //   if (radio === customInitialValues.user) {
       //     expect(radioButton).toBeChecked();
@@ -87,5 +88,44 @@ describe("InputsRadio", () => {
       const inputElement = screen.getByRole("radio", { name: radio });
       expect(inputElement).toBeInTheDocument();
     });
+  });
+
+  test("should show validation error when radio is unchecked", async () => {
+    render(
+      <Formik
+        initialValues={{ user: "" }}
+        onSubmit={() => {}}
+        validate={values => {
+          const errors: Record<string, string> = {};
+          if (!values.user) errors.user = "Selection is required";
+          return errors;
+        }}
+      >
+        {({ errors }) => (
+          <>
+            <InputsRadio
+              headingText="Test Heading"
+              inputsData={inputsData}
+              inputValue="user"
+              membership={true}
+            />
+            {errors.user && <div role="alert">{errors.user}</div>}
+          </>
+        )}
+      </Formik>
+    );
+
+    const firstRadio = screen.getByRole("radio", { name: "name" });
+    const secondRadio = screen.getByRole("radio", { name: "surname" });
+
+    expect(firstRadio).not.toBeChecked();
+    expect(secondRadio).not.toBeChecked();
+
+    await act(async () => {
+      fireEvent.blur(firstRadio);
+    });
+
+    const errorMessage = await screen.findByRole("alert");
+    expect(errorMessage).toHaveTextContent("Selection is required");
   });
 });
