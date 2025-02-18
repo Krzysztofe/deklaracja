@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import { useFormikContext } from "formik";
 import { useEffect } from "react";
 import { rwd } from "../../../utils/rwd";
-import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore";
+import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore/useFormMemberStore";
 import useMultistepFormStore from "../../../zustandStores/useMultistepFormStore";
 import { ModelMember } from "../../../sharedModels/ModelMember";
 
@@ -23,7 +23,7 @@ const ButtonFormSubmit = () => {
   }, [currentStepIdx]);
 
   if (currentStepIdx !== 0) return null;
-  
+
   return (
     <Button
       variant="contained"

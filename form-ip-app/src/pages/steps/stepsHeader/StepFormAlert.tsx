@@ -1,6 +1,6 @@
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
-import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore";
+import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore/useFormMemberStore";
 
 type Errors = {
   confirmation?: string;
@@ -28,15 +28,15 @@ const StepFormAlert = () => {
         bgcolor: "rgb(253, 237, 237)",
         zIndex: "3",
         display: "flex",
-        alignItems:"center",
-        justifyContent:"center"
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <Alert
         severity="error"
         sx={{
           height: "fit-content",
-          backgroundColor: "transparent"
+          backgroundColor: "transparent",
         }}
       >
         Wypełnij pola formularza

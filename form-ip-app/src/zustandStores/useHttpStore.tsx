@@ -1,4 +1,4 @@
-import {create} from "zustand";
+import { create } from "zustand";
 
 type HttpRequest = {
   isLoading: boolean;
@@ -30,11 +30,10 @@ const useHttpRequestStore = create<HttpRequest>(set => ({
 
       if (!response.ok) {
         throw Error("Błąd. Ponów próbę");
-      } else {
-        returnData(response.ok);
-        const responseData = await response.json();
-        return responseData;
       }
+      returnData(response.ok);
+      const responseData = await response.json();
+      return responseData;
     } catch (err) {
       set({ error: err });
     } finally {

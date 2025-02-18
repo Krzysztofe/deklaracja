@@ -1,7 +1,7 @@
 import { initialValues as initialValuesInForm } from "./initialValuesMember";
 import { validationSchema } from "./validationFormikMember";
 import * as yup from "yup";
-import { useFormMemberStore } from "../../../../zustandStores/useFormMemberStore";
+import { useFormMemberStore } from "../../../../zustandStores/useFormMemberStore/useFormMemberStore";
 
 const useFormikMember = () => {
   const setSubmited = useFormMemberStore(state => state.setSubmited);

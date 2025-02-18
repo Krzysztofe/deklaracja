@@ -4,7 +4,7 @@ import { useFormikContext } from "formik";
 import HeadingPrimary from "../../hedaingPrimary/HeadingPrimary";
 import { rwd } from "../../../utils/rwd";
 import InputsErrors from "../InputsErrors/InputsErrors";
-import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore";
+import { useFormMemberStore } from "../../../zustandStores/useFormMemberStore/useFormMemberStore";
 import { useEffect } from "react";
 import { ModelMember } from "../../../sharedModels/ModelMember";
 import useHandleInputsText from "./useHandleInputsText";
@@ -50,7 +50,7 @@ const InputsTexts = (props: Props) => {
               type={type}
               name={value}
               label={label}
-              value={values[value as keyof typeof values]}
+              value={values[value as keyof typeof values] || ""}
               onChange={e => handleChange(value, e)}
               onBlur={handleBlur}
               size="small"
