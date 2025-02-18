@@ -47,8 +47,6 @@ const ButtonPOSTvalues = () => {
         "&:hover": { backgroundColor: "#2455BA" },
       }}
     >
-
-      eeee
       {isCaptcha ? "Wyślij" : "ZAZNACZ CAPTCHA"}
     </Button>
   );

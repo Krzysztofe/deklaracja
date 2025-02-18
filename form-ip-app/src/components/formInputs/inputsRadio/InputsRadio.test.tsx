@@ -63,13 +63,6 @@ describe("InputsRadio", () => {
     inputsData.forEach(radio => {
       const radioButton = screen.getByRole("radio", { name: radio });
       expect(radioButton).toHaveAttribute("value", radio);
-
-      // Check if the selected value is correctly set
-      //   if (radio === customInitialValues.user) {
-      //     expect(radioButton).toBeChecked();
-      //   } else {
-      //     expect(radioButton).not.toBeChecked();
-      //   }
     });
   });
 

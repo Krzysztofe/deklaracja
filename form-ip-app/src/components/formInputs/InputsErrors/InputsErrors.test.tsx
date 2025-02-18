@@ -4,7 +4,6 @@ import InputsErrors from "./InputsErrors";
 import { FormikErrors, FormikTouched } from "formik";
 import { ModelMember } from "../../../sharedModels/ModelMember";
 
-
 const mockErrors: FormikErrors<ModelMember> = {
   name: "Name is required",
   email: "Email is invalid",
@@ -35,25 +34,6 @@ describe("InputsErrors", () => {
     const errorMessage = screen.queryByText("Name is required");
     expect(errorMessage).not.toBeInTheDocument();
   });
-
-  // test("renders error message for 'otherValue' when touched and error exist", () => {
-  //   const mockTouchedWithOtherValue = {
-  //     ...mockTouched,
-  //     email: true, // Ensure `touched["email"]` is true
-  //   };
-
-  //   render(
-  //     <InputsErrors
-  //       value="name"
-  //       otherValue="email"
-  //       errors={mockErrors}
-  //       touched={mockTouchedWithOtherValue}
-  //     />
-  //   );
-
-  //   const errorMessage = screen.getByText("Email is invalid");
-  //   expect(errorMessage).toBeInTheDocument();
-  // });
 
   test("renders error message for 'value' or 'otherValue' when both are touched and errors exist", () => {
     render(
