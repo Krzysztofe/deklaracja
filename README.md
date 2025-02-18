@@ -8,7 +8,7 @@ The application consists of four steps: <br/> 1 A form that collects basic infor
 
 The form data is transmitted via a backend application created in Express to the union office's email inbox.
 
-The application has been tested with unit tests.
+The application has been tested with unit and integration tests.
 
 
 ## Features
