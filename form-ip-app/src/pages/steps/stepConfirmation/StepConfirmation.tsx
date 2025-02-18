@@ -4,7 +4,8 @@ import StepConfirmationBanksList from "./StepConfirmationBanksList";
 import StepConfirmationFooter from "./StepConfirmationFooter";
 import StepConfirmationMainHeading from "./StepConfirmationMainHeading";
 import StepConfirmationParagraphs from "./StepConfirmationParagraphs";
-import StepConfirnationHeadings from "./StepConfirnationHeadings";
+import StepConfirnationHeadings from "./stepsConfirmationHeadings/StepConfirnationHeadings";
+
 import {
   dataPrimaryTexts,
   dataSecondaryTexts,
