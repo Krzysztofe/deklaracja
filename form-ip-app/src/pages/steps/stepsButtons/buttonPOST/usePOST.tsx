@@ -4,7 +4,7 @@ import { URL } from "../../../../data/dataURL";
 import { ModelMember } from "../../../../sharedModels/ModelMember";
 import { currentDateInNumbers } from "../../../../utils/currentDateInNumbers";
 import { useCaptchaStore } from "../../../../zustandStores/useCaptchaStore";
-import useHttpRequestStore from "../../../../zustandStores/useHttpStore";
+import useHttpRequestStore from "../../../../zustandStores/useHttpStore/useHttpStore";
 import useMultistepFormStore from "../../../../zustandStores/useMultistepFormStore";
 
 const usePOST = () => {

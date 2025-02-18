@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
 import { rwd } from "../../../utils/rwd";
-import useHttpRequestStore from "../../../zustandStores/useHttpStore";
+import useHttpRequestStore from "../../../zustandStores/useHttpStore/useHttpStore";
 import { heightHeaderXS, heightHeaderMD } from "../data/dataCompnentsHeight";
 
 const BoxStylesBackground = {
