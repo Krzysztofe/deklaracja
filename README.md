@@ -18,6 +18,7 @@ The application has been tested with unit and integration tests.
 * HTTP request state messages for user
 * RWD
 * Animations
+* unit tests
 
 ## Technologies  
 * Material UI,
