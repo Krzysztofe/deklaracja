@@ -37,7 +37,7 @@ formik, yup, react testing library, jest<br/>
 
 
 
-## Production versions for 3 differand commisions deployed on home.pl: <a href = "https://deklaracja.ozzip.pl/"> Amazon here --> </a>, <a href = "https://canpack.ozzip.pl/"> Canpack here --> </a>, <a href = "https://fiege.ozzip.pl/"> Zalando here --> </a>
+## Production versions for 4 differand commisions deployed on home.pl: <a href = "https://deklaracja.ozzip.pl/"> Amazon here --> </a>, <a href = "https://canpack.ozzip.pl/"> Canpack here --> </a>, <a href = "https://fiege.ozzip.pl/"> Zalando here --> </a>,  <a href = "https://podbeskidzie.ozzip.pl/"> Podbeskidzie here -->  </a>
 
 ## Desktop
 <div align="center">
