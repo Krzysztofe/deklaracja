@@ -8,7 +8,7 @@ import HeadingPrimary from "../../hedaingPrimary/HeadingPrimary";
 import { rwd } from "../../../utils/rwd";
 import InputsErrors from "../InputsErrors/InputsErrors";
 import { ModelMember } from "../../../sharedModels/ModelMember";
-import { highlightText } from "../../../utils/highlightingText";
+import { highlightText } from "../../../utils/highlightText";
 
 type Props = {
   headingText: string;

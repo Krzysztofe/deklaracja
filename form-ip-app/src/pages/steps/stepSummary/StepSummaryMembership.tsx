@@ -4,8 +4,7 @@ import { useFormikContext } from "formik";
 import { rwd } from "../../../utils/rwd";
 import { ModelMember } from "../../../sharedModels/ModelMember";
 import StepBorderline from "./StepBorderline";
-import { highlightText } from "../../../utils/highlightingText";
-highlightText;
+import { highlightText } from "../../../utils/highlightText";
 
 const CustomTypography = ({
   children,
