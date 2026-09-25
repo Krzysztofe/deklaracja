@@ -23,6 +23,7 @@ export const dataWorkplaceInputs = [
   "wro2",
   "wro4",
   "wro5",
+  "wro6",
   "lcj",
   "lcj2",
   "lcj3",
